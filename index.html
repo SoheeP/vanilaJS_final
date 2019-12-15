@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+
+  <body>
+    <div class="time">
+      <div class="js-clock">
+        <h1 class="js-title">00:00</h1>
+      </div>
+      <span class="js-weather"></span>
+    </div>
+    <div class="greetingBox">
+      <form action="" class="js-form form">
+        <input
+          type="text"
+          placeholder="What is your name?"
+          class="form_input"
+        />
+      </form>
+      <h4 class="js-greetings greetings">
+        Hello, <span class="js-username"></span>
+      </h4>
+    </div>
+    <div class="todoBox">
+      <form action="" class="js-toDoForm">
+        <input type="text" placeholder="Write a to do" class="form_input" />
+      </form>
+      <h4 class="todo_title">I have to ...</h4>
+      <ul class="js-toDoList"></ul>
+    </div>
+
+    <script src="/src/clock.js"></script>
+    <script src="/src/greeting.js"></script>
+    <script src="/src/todo.js"></script>
+    <script src="/src/bg.js"></script>
+    <script src="/src/weather.js"></script>
+  </body>
+</html>

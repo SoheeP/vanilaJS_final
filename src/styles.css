@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: gray;
+  font-family: 'Oswald', sans-serif;
+}
+
+.time {
+  margin-top: 200px;
+}
+
+.js-clock {
+  width: 100%;
+  margin: 0 auto;
+  text-shadow: 0px 0px 9px #666;
+}
+
+.js-clock .js-title {
+  font-size: 85px;
+  text-align: center;
+  color: #fff;
+}
+.js-weather{
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 0px 0px 9px #333;
+  text-align: center;
+}
+
+.greetingBox {
+  width: 50%;
+  margin: 25px auto;
+  text-shadow: 0px 0px 9px #666;
+}
+
+.greetings {
+  font-size: 55px;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+}
+
+.js-username {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 2px;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.form{
+  position: relative;
+}
+.form_input{
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  height: 50px;
+  border: none;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: 3px solid #fff;
+  background-color: transparent;
+  font-size: 22px;
+}
+.form_input:focus{
+  border-color: lemonchiffon;
+  background-color: rgba(255, 255, 255, .5);
+  transition: all .2s;
+}
+.form_input::placeholder{
+  color: #fff;
+  font-size: 22px;
+}
+.todoBox {
+  margin: 55px auto 0 auto;
+  width: 55%;
+
+}
+.js-toDoForm .form_input{
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid #fff;
+  color:#fff;
+  font-size: 18px;
+} 
+.js-toDoForm .form_input:focus{
+  background-color: transparent;
+}
+.todo_title{
+  color: #fff;
+  text-shadow: 0px 0px 8px #666;
+  margin-top: 50px;
+  width: 50%;
+  font-size: 28px;
+  margin-left: 15%;
+}
+.js-toDoList{
+  width: 55%;
+  margin: 0 auto;
+  color: #fff;
+  text-shadow: 0px 0px 8px #666;
+}
+
+.js-toDoList li{
+  font-size: 20px;
+}
+.js-toDoList button{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #666;
+  border-radius: 3px;
+  font-size: 10px;
+  margin-right: 5px;
+  font-weight: 700;
+}
+.desc{
+  position: absolute;
+  top: 0;
+  left: 85%;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn .5s linear;
+}
